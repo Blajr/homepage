@@ -1,15 +1,21 @@
 ---
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+  <div class="hero min-h-screen bg-base-200">
+    <div class="hero-content text-center">
+      <div class="max-w-md">
+        <h1 class="text-5xl font-bold">Casting light on</h1>
+        <h1 class="text-5xl font-bold">AI literacy</h1>
+        <p class="py-6">
+          Gamified education platform to help Indonesian know and use AI properly and
+          ethically using personalized AI.
+        </p>
+        <a href="/about">
+        <button class="btn btn-primary">Learn More</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
